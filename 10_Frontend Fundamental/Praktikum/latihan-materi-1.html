@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        * {
+
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .content{
+            width: 100%;
+            flex: 33.3%
+        }
+
+        #red {
+            background-color: red;
+            padding: 10px;
+        }
+
+        #green {
+            background-color: green;
+            padding: 10px;
+        }
+
+        #blue {
+            background-color: blue;
+            padding: 10px;
+        }
+
+        #yellow {
+            background-color: yellow;
+            padding: 10px;
+        }
+
+        #purple {
+            background-color: purple;
+            padding: 10px;
+        }
+
+        #grey {
+            background-color: grey;
+            padding: 10px;
+        }
+
+        /* Responsive layout - makes a one column-layout instead of three-column layout */
+        @media  (max-width: 600px){
+            .content {
+            flex: 100%
+            }
+        }
+
+        /* Responsive layout - makes a one column-layout instead of two-column and one-column layout */
+        @media screen and (min-width: 600px) and (max-width: 960px) {
+            .content {
+            flex: 50%
+            }
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamental Frontend</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="content" id="red"></div>
+        <div class="content" id="green"></div>
+        <div class="content" id="blue"></div>
+        <div class="content" id="yellow"></div>
+        <div class="content" id="purple"></div>
+        <div class="content" id="grey"></div>
+    </div>
+
+</body>
+</html>
